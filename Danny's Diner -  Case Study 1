@@ -1,0 +1,92 @@
+# Case Study #1 - Danny's Diner ::ramen::
+
+![Danny's Diner](https://datawithdanny.com/img/case-study-1.jpg)
+
+Danny’s Diner is a small Japanese restaurant that opened in early 2021, offering three of Danny’s favorite foods: sushi, curry, and ramen.
+To better understand his customers and improve the business, Danny needs help analyzing the data collected during the restaurant’s initial months of operation. 
+With this data, Danny hopes to answer key questions about customer behavior, spending patterns, and menu preferences. 
+These insights will guide decisions on whether to expand the customer loyalty program and how to provide a more personalized experience for loyal customers.
+
+---
+
+## Problem Statement
+
+Danny wants to use the data to answer a few simple questions about his customers:
+
+**Customer Spending Patterns**: How much money each customer spends and how frequently they visit.
+**Menu Preferences**: Which menu items are most popular among customers.
+**Loyalty Program Impact**: How the restaurant's loyalty program affects customer behavior, particularly which items customers buy after joining and which items they bought before becoming members.
+
+The data will help Danny make informed decisions regarding:
+1. Personalizing the customer experience.
+2. Expanding the loyalty program.
+3. Generating datasets for easy inspection by the restaurant team.
+
+---
+
+## Objectives
+
+The case study will use SQL to answer the following key questions:
+
+1. **Total Amount Spent**: Calculate the total amount spent by each customer.
+2. **Visitation Frequency**: Identify how many distinct days each customer has visited the restaurant.
+3. **First Purchase**: Determine the first menu item purchased by each customer.
+4. **Most Purchased Item**: Find the most popular item purchased by customers.
+5. **Customer-Specific Popularity**: Identify the most purchased item for each customer.
+6. **Pre-Membership and Post-Membership Behavior**: Analyze customer behavior before and after joining the loyalty program.
+7. **Points Calculation**: Calculate loyalty points based on purchases, with special multipliers for certain items.
+
+Additionally, we will generate summarized datasets for easy inspection.
+
+---
+
+## Available Data
+
+Danny has shared 3 key datasets for this case study:
+
+- **sales**: Captures customer purchases with corresponding `customer_id`, `order_date`, and `product_id`.
+- **menu**: Contains product information like `product_id`, `product_name`, and `price`.
+- **members**: Captures customer `join_date` for the loyalty program.
+
+---
+
+## SQL Queries
+
+In this repository, you'll find SQL queries designed to analyze the data and answer the key questions outlined above. These queries include:
+
+- Calculating total spending by each customer.
+- Determining customer visit frequency.
+- Identifying popular menu items.
+- Points calculation for loyalty rewards.
+
+---
+
+## How to Run the Queries
+
+1. Clone this repository to your local machine.
+2. Set up a PostgreSQL database (or any SQL database of your choice).
+3. Import the provided datasets into your database.
+4. Run the SQL queries found in the `queries` directory.
+
+---
+
+## Key Insights
+
+The SQL queries will generate insights that help Danny:
+
+- Personalize the dining experience for customers.
+- Decide whether to expand the loyalty program.
+- Provide his team with easy-to-understand datasets for further analysis.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgements
+
+- Data provided by Danny's Diner (sample data for case study purposes).
+- SQL resources and tutorials that contributed to the development of this case study.
